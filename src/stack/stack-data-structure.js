@@ -5,17 +5,29 @@ class Stack {
   }
 
   canPush() {
-    // ... your code goes here
-  }
+    if(this.stackControl.length===0){
+      return true
+    }
+    if(this.stackControl.length === this.MAX_SIZE){
+      return false
+    }  }
 
   isEmpty() {
-    // ... your code goes here
+    return this.stackControl.length === 0
   }
 
   push(item) {
-    // ... your code goes here
-  }
+   try{
+    if(this.stackControl.length === this.MAX_SIZE){
+      throw new Error('STACK_OVERFLOW')
+     }
+    this.stackControl.push(item)
+    return this.stackControl
+   
+  } catch{
 
+  }
+  }
   pop() {
     // ... your code goes here
   }

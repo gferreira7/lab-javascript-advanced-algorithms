@@ -3,7 +3,7 @@ class Queue {
     this.queueControl = [];
     this.MAX_SIZE = 10;
   }
-
+  
   canEnqueue() {
     // ... your code goes here
   }
